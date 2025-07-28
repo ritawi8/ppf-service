@@ -1,0 +1,114 @@
+/* Navbar container */
+nav {
+	background-color: transparent;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+/* Logo styling - höger */
+.logo {
+	font-size: 26px;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	flex-shrink: 0;
+}
+
+/* Navigation menu - centrerad */
+.nav-menu {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nav-menu a {
+	color: black;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+	color: #666;
+}
+
+/* Left section - social media */
+.right-section {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-shrink: 0;
+}
+
+.social-media {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.social-link {
+	color: #333;
+	font-size: 20px;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.social-link:hover {
+	color: #666;
+}
+
+/* Responsive design - behåll layouten, bara gör mindre */
+@media (max-width: 768px) {
+	nav {
+		padding: 15px 20px;
+	}
+
+	.logo {
+		font-size: 18px;
+	}
+
+	.nav-menu {
+		gap: 20px;
+	}
+
+	.nav-menu a {
+		font-size: 16px;
+	}
+
+	.social-link {
+		font-size: 18px;
+	}
+}
+
+/* För mycket små skärmar */
+@media (max-width: 480px) {
+	nav {
+		padding: 10px 15px;
+	}
+
+	.logo {
+		font-size: 16px;
+	}
+
+	.nav-menu {
+		gap: 15px;
+	}
+
+	.nav-menu a {
+		font-size: 14px;
+	}
+
+	.social-link {
+		font-size: 16px;
+	}
+}
