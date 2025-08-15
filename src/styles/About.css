@@ -200,7 +200,7 @@
 }
 
 /* Large Desktop Styles */
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .about-container {
     max-width: 1400px;
   }

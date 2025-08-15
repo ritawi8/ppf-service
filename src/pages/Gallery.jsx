@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/GalleryNew.css';
+import '../styles/ServicesAndGallery.css';
 
 function Gallery() {
 	return (
-		<div className="gallerynew-container">
-			<div className="gallerynew-hero">
-				<h1 className="gallerynew-title">Bildgalleri</h1>
-				<p className="gallerynew-subtitle">Se våra senaste PPF-projekt och resultat</p>
+		<div className="services-container">
+			<div className="services-hero">
+				<h1 className="services-title">Bildgalleri</h1>
+				<p className="services-subtitle">Se våra senaste PPF-projekt och resultat</p>
 			</div>
 			
-			<div className="gallerynew-content">
+			<div className="services-content">
 				<div className="service-item">
 					<div className="service-text">
 						<h2>PPF Installation</h2>

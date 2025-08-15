@@ -1,8 +1,46 @@
 /* Reset and Base Styles */
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* CRITICAL: Fix viewport width difference between pages */
+:root {
+  scrollbar-gutter: stable both-edges;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+/* UNIVERSAL PAGE WRAPPER - All pages use this for consistent width */
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive padding for page wrapper */
+@media (min-width: 768px) {
+  .page-wrapper {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-wrapper {
+    padding: 0 4rem;
+  }
 }
 
 body {
@@ -16,7 +54,7 @@ body {
 }
 
 #root {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -25,7 +63,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 
 /* Responsive Typography */
@@ -58,7 +96,7 @@ img {
 }
 
 /* Responsive Spacing */
-.mt-1 { margin-top: 0.5rem; }
+/* .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
@@ -74,7 +112,7 @@ img {
 .p-2 { padding: 1rem; }
 .p-3 { padding: 1.5rem; }
 .p-4 { padding: 2rem; }
-.p-5 { padding: 3rem; }
+.p-5 { padding: 3rem; } */
 
 /* Media Queries for Global Responsiveness */
 @media (min-width: 768px) {
@@ -86,5 +124,11 @@ img {
 @media (min-width: 1024px) {
   .container {
     padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 4rem;
   }
 }
